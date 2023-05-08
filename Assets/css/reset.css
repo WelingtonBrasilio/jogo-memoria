@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 html, body{
-    font-family: 'Play', sans-serif;;
+    font-family: 'Play', sans-serif;
+    background-image: url(../img/bg-site.jpg);
+    background-size: cover;
 }
 
 
