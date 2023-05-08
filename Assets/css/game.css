@@ -1,0 +1,60 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px 50px;
+}
+
+header{
+    width: 100%;
+    max-width: 750px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+}
+
+.tela{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/*Determina o tamanho padrão do card nos tamanhos de tela e sua transição ao ser virada*/
+.card{
+    aspect-ratio: 3/4;
+    transition: all 400ms ease-in;
+    transform-style: preserve-3d;
+}
+
+/*Revela carta quando clicada*/
+.revela-card{
+    transform: rotateY(180deg);
+}
+
+/*Define os versos com o tamanho disponivel do card e os sobrepõem*/
+.verso{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #444;
+    border-radius: 5px;
+    transition: all 400ms ease-in;
+}
+
+.frente{
+    background-color: #EF8610;
+    transform: rotateY(180deg);
+}
+
+/*Bg do card cobrindo todo o espaço disponivel e escondendo a costa da carta quando ela é virada*/
+.costa{
+    background-image: url(../img/bg.jpg);
+    backface-visibility: hidden; 
+}
+
+.desabilita-card{
+    filter: saturate(0);
+    opacity: 0.5;
+}
