@@ -1,4 +1,4 @@
-// Variaveis para input e buttao do form
+// Variaveis para input e botão do form
 const input = document.querySelector('.input-login')
 const button = document.querySelector('.botao-login')
 const form = document.querySelector('.form-login')
